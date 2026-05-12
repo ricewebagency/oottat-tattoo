@@ -2722,6 +2722,10 @@ video {
   background-size: 24px 24px;
 }
 
+.\[color-scheme\:black\] {
+  color-scheme: black;
+}
+
 .\[color-scheme\:dark\] {
   color-scheme: dark;
 }
