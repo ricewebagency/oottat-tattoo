@@ -34,6 +34,75 @@
   <link rel="stylesheet" href="./js/buttons.css" />
   <link rel="stylesheet" href="./js/gallery-carousel.css" />
   <script src="./js/initial-dvh.js"></script>
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TattooParlor",
+    "name": "Oottat Tattoo",
+    "image": "https://oottattattoo.nl/assets/images/impression-1.jpg",
+    "description": "Premium custom tattoos in een rustige, moderne studio. Onze focus ligt op precisie, schaduw en tijdloze designs.",
+    "url": "https://oottattattoo.nl/",
+    "telephone": "+31610979663",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Norbertijnenstraat 1",
+      "postalCode": "1566 LK",
+      "addressLocality": "Assendelft",
+      "addressCountry": "NL"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 52.4784,
+      "longitude": 4.7501
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+      "opens": "00:00",
+      "closes": "23:59",
+      "description": "Alleen op afspraak"
+    },
+    "sameAs": [
+      "https://www.instagram.com/oottattattoo.nl",
+      "https://www.tiktok.com/@oottattattoo_"
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Oottat Tattoo",
+    "url": "https://oottattattoo.nl/",
+    "logo": "https://oottattattoo.nl/assets/icons/apple-touch-icon.png",
+    "founder": {
+      "@type": "Person",
+      "name": "Guido Pruim"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+31610979663",
+      "contactType": "customer service",
+      "availableLanguage": "nl"
+    },
+    "sameAs": [
+      "https://www.instagram.com/oottattattoo.nl",
+      "https://www.tiktok.com/@oottattattoo_"
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Oottat Tattoo",
+    "url": "https://oottattattoo.nl/",
+    "description": "Boek jouw custom tattoo in Amsterdam. Persoonlijk ontwerp, premium studio en heldere begeleiding van intake tot nazorg."
+  }
+  </script>
+  <!-- End Structured Data -->
   <!-- Google Tag Manager -->
   <script>(function (w, d, s, l, i) {
       w[l] = w[l] || []; w[l].push({
@@ -115,7 +184,7 @@
       <nav class="hidden items-center gap-7 text-xs tracking-[0.16em] text-white/80 lg:flex">
         <a class="transition hover:text-primary uppercase" href="./">Home</a>
         <a class="transition hover:text-primary uppercase" href="./#over-ons">Over ons</a>
-        <a class="transition hover:text-primary uppercase" href="./galerij.html">Galerij</a>
+        <a class="transition hover:text-primary uppercase" href="./galerij">Galerij</a>
         <a class="transition hover:text-primary uppercase" href="./#verzorging">Verzorgingstips</a>
         <a href="https://wa.me/31610979663?text=Hoi%20Guido%2C%20ik%20zou%20graag%20een%20afspraak%20bij%20je%20willen%20maken."
           target="_blank" class="button-primary">
@@ -238,7 +307,7 @@
               tattoo kunt laten zetten.
             </p>
           </div>
-          <a href="galerij.html" class="button-secondary" data-scroll-fade data-scroll-axis="x"
+          <a href="./galerij" class="button-secondary" data-scroll-fade data-scroll-axis="x"
             data-scroll-distance="12" data-scroll-axis="y">
             Bekijk ons werk</a>
         </div>
@@ -857,7 +926,7 @@
 
             <article
               class="w-[80vw] min-h-[350px] justify-center flex flex-col gap-2 max-w-[200px] shrink-0 snap-start snap-always overflow-hidden rounded-[5px] shadow-[0_18px_40px_rgba(0,0,0,0.35)] transition hover:shadow-[0_24px_48px_rgba(0,0,0,0.45)] sm:w-[200px]">
-              <a href="galerij.html" target="_blank" rel="noopener noreferrer"
+              <a href="./galerij" target="_blank" rel="noopener noreferrer"
                 class="group w-full flex gap-2 button-primary hover:!shadow-none">
                 Bekijk fotogalerij
               </a>
@@ -895,7 +964,7 @@
               Afspraak maken
               <span class="group-hover:translate-x-1 duration-300">→</span>
             </a>
-            <a href="galerij.html" class="w-full sm:w-fit sm:min-w-[250px] flex gap-2 button-secondary" data-scroll-fade
+            <a href="./galerij" class="w-full sm:w-fit sm:min-w-[250px] flex gap-2 button-secondary" data-scroll-fade
               data-scroll-axis="x" data-scroll-distance="26">
               Bekijk al ons werk
             </a>
@@ -910,7 +979,7 @@
       <div class="lg:max-w-[1850px] lg:w-[92vw] mx-6 lg:mx-auto">
         <div class="mb-10 flex flex-col gap-4">
           <div data-scroll-fade data-scroll-axis="x" data-scroll-distance="14"
-            class="inline-flex items-center gap-3 text-[11px] uppercase tracking-[0.2em] text-white/60 md:justify-center md:w-full ">
+            class="inline-flex items-center gap-3 mt-8 text-[11px] uppercase tracking-[0.2em] text-white/60 md:justify-center md:w-full ">
             Verzorgingstips
           </div>
           <h2
@@ -1131,7 +1200,7 @@
                     Laten we kennismaken
                     <span class="group-hover:translate-x-1 duration-300">→</span>
                   </a>
-                  <a href="galerij.html"
+                  <a href="./galerij"
                     class="inline-flex w-max items-center ms-2 gap-2 mb-6 sm:mb-0 border-b border-slate-300/60 pb-1 text-xs font-semibold text-slate-200 transition hover:text-white sm:text-sm">
                     Of bekijk ons werk
                   </a>
@@ -1147,7 +1216,7 @@
       <div aria-hidden="true"
         class="pointer-events-none absolute -top-24 right-10 h-44 w-44 rounded-full bg-accent/10 blur-3xl"></div>
       <div class="mx-auto w-full max-w-6xl px-6 pt-12 pb-4 md:pt-16">
-        <div class="grid gap-10 md:grid-cols-[1.1fr_0.9fr_0.9fr]">
+        <div class="grid gap-10 md:grid-cols-2 lg:grid-cols-[1.1fr_0.9fr_0.9fr_0.9fr]">
           <div class="flex flex-col gap-4">
             <div class="flex flex-col gap-2">
               <span class="text-3xl tracking-[0.2em]">OOTTAT</span>
@@ -1163,7 +1232,7 @@
                 Boek consult
                 <span class="group-hover:translate-x-1 duration-300">→</span>
               </a>
-              <a href="galerij.html" class="group flex items-center gap-2 button-secondary">
+              <a href="./galerij" class="group flex items-center gap-2 button-secondary">
                 Bekijk werk
                 <span class="group-hover:translate-x-1 duration-300">→</span>
               </a>
@@ -1206,11 +1275,43 @@
             <div class="flex flex-col gap-3 text-sm text-white/70">
               <a class="transition hover:text-accent" href="#">Home</a>
               <a class="transition hover:text-accent" href="./#over-ons">Over ons</a>
-              <a class="transition hover:text-accent" href="./galerij.html">Galerij</a>
+              <a class="transition hover:text-accent" href="./galerij">Galerij</a>
               <a class="transition hover:text-accent" href="./#instagram">Instagram posts</a>
-              <a class="transition hover:text-accent" href="./algemene-voorwaarden.html">Algemene voorwaarden</a>
-              <a class="transition hover:text-accent" href="./privacy.html">Privacybeleid</a>
+              <a class="transition hover:text-accent" href="./algemene-voorwaarden">Algemene voorwaarden</a>
+              <a class="transition hover:text-accent" href="./privacy">Privacybeleid</a>
               <a class="transition hover:text-accent" href="tel:+31610979663">Bel direct</a>
+            </div>
+          </div>
+
+          <div class="flex flex-col gap-4">
+            <button 
+              class="text-left text-xs uppercase tracking-[0.2em] text-white/60 flex items-center gap-2 hover:text-white/80 transition" 
+              type="button"
+              aria-expanded="false"
+              aria-controls="region-links"
+              data-region-toggle>
+              Regio's
+              <svg class="w-3 h-3 transition-transform duration-300" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/>
+              </svg>
+            </button>
+            <div 
+              id="region-links"
+              class="hidden flex-col gap-3 text-sm text-white/50"
+              data-region-links>
+              <a class="transition hover:text-white/70" href="./tattoo-alkmaar">Alkmaar</a>
+              <a class="transition hover:text-white/70" href="./tattoo-amsterdam">Amsterdam</a>
+              <a class="transition hover:text-white/70" href="./tattoo-beverwijk">Beverwijk</a>
+              <a class="transition hover:text-white/70" href="./tattoo-castricum">Castricum</a>
+              <a class="transition hover:text-white/70" href="./tattoo-haarlem">Haarlem</a>
+              <a class="transition hover:text-white/70" href="./tattoo-heemskerk">Heemskerk</a>
+              <a class="transition hover:text-white/70" href="./tattoo-koog-aan-de-zaan">Koog aan de Zaan</a>
+              <a class="transition hover:text-white/70" href="./tattoo-krommenie">Krommenie</a>
+              <a class="transition hover:text-white/70" href="./tattoo-uitgeest">Uitgeest</a>
+              <a class="transition hover:text-white/70" href="./tattoo-westzaan">Westzaan</a>
+              <a class="transition hover:text-white/70" href="./tattoo-wormerveer">Wormerveer</a>
+              <a class="transition hover:text-white/70" href="./tattoo-zaandam">Zaandam</a>
+              <a class="transition hover:text-white/70" href="./tattoo-zaandijk">Zaandijk</a>
             </div>
           </div>
         </div>
@@ -1279,7 +1380,7 @@
             class="text-white w-4 h-4 ml-2 transition-transform duration-300 group-hover:translate-x-1" />
         </a>
         <a class="group menu-item flex items-center justify-between text-xs uppercase py-4 border-b-[1px] border-white/20 font-bold opacity-0 -translate-y-2 transition-all duration-500 delay-[80ms]"
-          href="./galerij.html">
+          href="./galerij">
           <span class="group-hover:text-white/60 duration-300">Galerij</span>
           <img src="./assets/icons/chevron-right.svg" alt=""
             class="text-white w-4 h-4 ml-2 transition-transform duration-300 group-hover:translate-x-1" />
@@ -1316,6 +1417,7 @@
   <script src="./js/scroll-reveal.js"></script>
   <script src="./js/care-steps-carousel.js"></script>
   <script src="./js/google-reviews.js" defer></script>
+  <script src="./js/region-toggle.js"></script>
 </body>
 
 </html>
