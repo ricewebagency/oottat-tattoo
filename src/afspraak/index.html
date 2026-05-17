@@ -153,12 +153,24 @@
 
         <!-- Boekingsformulier -->
         <div class="mx-auto w-full max-w-2xl animate-fadeInUp300">
-          <form action="https://api.web3forms.com/submit" method="POST" class="space-y-6">
+          <form action="https://hook.eu1.make.com/kavonao7q4mv8vkspp541xrk4kairrig" method="POST" class="space-y-6">
             <!-- Hidden Fields -->
             <input type="hidden" name="access_key" value="1c1474ed-87a8-43ed-a388-773cb3a09e46">
             <input type="hidden" name="subject" value="Nieuwe tattoo boeking via website">
             <input type="hidden" name="from_name" value="Oottat Tattoo Boekingsformulier">
             <input type="hidden" name="redirect" value="https://oottattattoo.nl/bedankt">
+            
+            <!-- Tracking Parameters -->
+            <input type="hidden" name="utm_source" id="utm_source">
+            <input type="hidden" name="utm_medium" id="utm_medium">
+            <input type="hidden" name="utm_campaign" id="utm_campaign">
+            <input type="hidden" name="utm_id" id="utm_id">
+            <input type="hidden" name="utm_term" id="utm_term">
+            <input type="hidden" name="utm_content" id="utm_content">
+            <input type="hidden" name="device" id="device">
+            <input type="hidden" name="matchtype" id="matchtype">
+            <input type="hidden" name="network" id="network">
+            <input type="hidden" name="gclid" id="gclid">
 
             <!-- Naam -->
             <div class="animate-fadeInUp" data-scroll-fade data-scroll-axis="y" data-scroll-distance="10">
@@ -475,6 +487,7 @@
   <script src="../js/gallery-lightbox.js"></script>
   <script src="../js/smooth-scroll.js"></script>
   <script src="../js/scroll-reveal.js"></script>
+  <script src="../js/utm-tracker.js"></script>
 </body>
 
 </html>
