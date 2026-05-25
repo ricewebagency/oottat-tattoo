@@ -3,11 +3,22 @@
 
 document.addEventListener('DOMContentLoaded', () => {
   const form = document.querySelector('form[action*="make.com"]');
+  const urlParams = new URLSearchParams(window.location.search);
+  const debugFromQuery = urlParams.get('debug_form') === '1';
+  const debugFromStorage = window.localStorage.getItem('debug_form') === '1';
+  const isDebugMode = debugFromQuery || debugFromStorage;
   
   if (!form) return;
 
+  if (debugFromQuery) {
+    window.localStorage.setItem('debug_form', '1');
+  }
+
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
+
+    const submitBtn = form.querySelector('button[type="submit"]');
+    const originalText = submitBtn ? submitBtn.innerHTML : '';
 
     // Collect all form data
     const formData = new FormData(form);
@@ -59,10 +70,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     try {
       // Disable submit button
-      const submitBtn = form.querySelector('button[type="submit"]');
-      const originalText = submitBtn.innerHTML;
-      submitBtn.disabled = true;
-      submitBtn.innerHTML = 'Versturen...';
+      if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.innerHTML = 'Versturen...';
+      }
 
       // Step 1: Send to Web3forms (primary submission for email)
       const web3Response = await fetch(web3formsUrl, {
@@ -79,6 +90,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
       // Step 2: Send to Make.com webhook (for tracking/analytics)
       try {
+        const debugPayloadSnapshot = {
+          webhook_url: makeWebhookUrl,
+          payload: makePayload,
+          captured_at: new Date().toISOString()
+        };
+
+        window.sessionStorage.setItem('make_debug_payload', JSON.stringify(debugPayloadSnapshot));
+
+        console.log('[Form] Make webhook payload:', {
+          webhook_url: makeWebhookUrl,
+          payload: makePayload
+        });
+
         await fetch(makeWebhookUrl, {
           method: 'POST',
           headers: {
@@ -92,6 +116,11 @@ document.addEventListener('DOMContentLoaded', () => {
       }
 
       // Success - redirect to thank you page
+      if (isDebugMode) {
+        console.info('[Form] Debug mode actief (?debug_form=1): redirect overgeslagen voor inspectie.');
+        return;
+      }
+
       window.location.href = redirectUrl;
 
     } catch (error) {
@@ -99,9 +128,10 @@ document.addEventListener('DOMContentLoaded', () => {
       alert('Er ging iets mis bij het versturen. Probeer het opnieuw of neem contact op via WhatsApp.');
       
       // Re-enable submit button
-      const submitBtn = form.querySelector('button[type="submit"]');
-      submitBtn.disabled = false;
-      submitBtn.innerHTML = originalText;
+      if (submitBtn) {
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = originalText;
+      }
     }
   });
 });
