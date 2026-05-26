@@ -26,6 +26,17 @@ carousels.forEach((carousel) => {
   let startScrollLeft = 0;
   let didDrag = false;
 
+  const updateTrackLayout = () => {
+    const hasOverflow = track.scrollWidth - track.clientWidth > 1;
+    track.classList.toggle('justify-center', !hasOverflow);
+    prevButton.disabled = !hasOverflow;
+    nextButton.disabled = !hasOverflow;
+
+    if (!hasOverflow) {
+      track.scrollLeft = 0;
+    }
+  };
+
   const scrollByStep = (direction) => {
     const step = getStepSize(track);
     if (!step) {
@@ -97,4 +108,8 @@ carousels.forEach((carousel) => {
     },
     true
   );
+
+  updateTrackLayout();
+  window.addEventListener('load', updateTrackLayout);
+  window.addEventListener('resize', updateTrackLayout);
 });

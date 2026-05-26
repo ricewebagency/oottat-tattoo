@@ -151,7 +151,7 @@ const renderReviewSummary = (reviews) => {
 const renderReviewCard = (review) => {
   const card = document.createElement("article");
   card.className =
-    "w-full shrink-0 rounded-[5px] border border-white/20 bg-charcoal/80 p-4 pb-10 shadow-[0_18px_50px_rgba(15,23,42,0.08)] sm:w-[calc((100%-1rem)/2)] lg:w-[calc((100%-2rem)/3)] xl:w-[calc((100%-3rem)/4)]";
+    "w-full shrink-0 rounded-xl border border-white/20 bg-charcoal/80 p-4 pb-10 shadow-[0_18px_50px_rgba(15,23,42,0.08)] sm:w-[calc((100%-1rem)/2)] lg:w-[calc((100%-2rem)/3)] xl:w-[calc((100%-3rem)/4)]";
 
   const header = document.createElement("div");
   header.className = "flex items-start justify-between gap-3";
@@ -276,7 +276,7 @@ const renderReviewCard = (review) => {
 const renderCtaCard = () => {
   const card = document.createElement("article");
   card.className =
-    "w-full shrink-0 rounded-[5px] border border-accent/30 bg-charcoal/80 p-4 shadow-[0_18px_50px_rgba(15,23,42,0.08)] sm:w-[calc((100%-1rem)/2)] lg:w-[calc((100%-2rem)/3)] min-h-[220px] flex flex-col justify-center";
+    "w-full shrink-0 rounded-xl border border-accent/30 bg-charcoal/80 p-4 shadow-[0_18px_50px_rgba(15,23,42,0.08)] sm:w-[calc((100%-1rem)/2)] lg:w-[calc((100%-2rem)/3)] min-h-[220px] flex flex-col justify-center";
 
   const logo = document.createElement("img");
   logo.className = "mb-3 size-8 rounded-full object-cover";
