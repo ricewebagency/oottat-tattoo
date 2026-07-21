@@ -2813,6 +2813,14 @@ video {
   transition-delay: 0ms;
 }
 
+.delay-\[120ms\] {
+  transition-delay: 120ms;
+}
+
+.delay-\[140ms\] {
+  transition-delay: 140ms;
+}
+
 .delay-\[200ms\] {
   transition-delay: 200ms;
 }
