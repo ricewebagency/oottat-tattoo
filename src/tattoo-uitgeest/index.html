@@ -1332,7 +1332,7 @@
       <div aria-hidden="true"
         class="pointer-events-none absolute -top-24 right-10 h-44 w-44 rounded-full bg-accent/10 blur-3xl"></div>
       <div class="mx-auto w-full max-w-6xl px-6 pt-12 pb-4 md:pt-16">
-        <div class="grid gap-10 md:grid-cols-[1.1fr_0.9fr_0.9fr]">
+        <div class="grid gap-10 md:grid-cols-2 lg:grid-cols-[1.1fr_0.9fr_0.9fr_0.9fr]">
           <div class="flex flex-col gap-4">
             <div class="flex flex-col gap-2">
               <span class="text-3xl tracking-[0.2em]">OOTTAT</span>
@@ -1343,7 +1343,8 @@
               tijdloze designs.
             </p>
             <div class="flex flex-wrap gap-3">
-              <a href="https://wa.me/31610979663?text=Hoi%20Guido%2C%20ik%20zou%20graag%20een%20consult%20bij%20je%20willen%20boeken." class="group flex items-center gap-2 button-primary !shadow-none">
+              <a href="https://wa.me/31610979663?text=Hoi%20Guido%2C%20ik%20zou%20graag%20een%20consult%20bij%20je%20willen%20boeken."
+                class="group flex items-center gap-2 button-primary !shadow-none">
                 Boek consult
                 <span class="group-hover:translate-x-1 duration-300">→</span>
               </a>
@@ -1388,59 +1389,44 @@
           <div class="flex flex-col gap-4">
             <div class="text-xs uppercase tracking-[0.2em] text-white/60">Snel naar</div>
             <div class="flex flex-col gap-3 text-sm text-white/70">
-              <a class="transition hover:text-accent" href="../">Home</a>
-              <a class="transition hover:text-accent" href="../#over-ons">Over ons</a>
-              <a class="transition hover:text-accent" href="../galerij">Galerij</a>
-              <a class="transition hover:text-accent" href="../tattoo-stijlen/black-and-grey">Black &amp; Grey</a>
-              <a class="transition hover:text-accent" href="../tattoo-stijlen/realism">Realism</a>              <a class="transition hover:text-accent" href="../#instagram">Instagram posts</a>
-              <a class="transition hover:text-accent" href="../algemene-voorwaarden">Algemene voorwaarden</a>
-              <a class="transition hover:text-accent" href="../privacy">Privacybeleid</a>
+              <a class="transition hover:text-accent" href="#">Home</a>
+              <a class="transition hover:text-accent" href="#over-ons">Over ons</a>
+              <a class="transition hover:text-accent" href="../galerij/">Galerij</a>
+              <a class="transition hover:text-accent" href="../tattoo-stijlen/black-and-grey/">Black & Grey</a>
+              <a class="transition hover:text-accent" href="../tattoo-stijlen/realism/">Realism</a>
+              <a class="transition hover:text-accent" href="#instagram">Instagram posts</a>
+              <a class="transition hover:text-accent" href="../algemene-voorwaarden/">Algemene voorwaarden</a>
+              <a class="transition hover:text-accent" href="../privacy/">Privacybeleid</a>
               <a class="transition hover:text-accent" href="tel:+31610979663">Bel direct</a>
             </div>
           </div>
+
           <div class="flex flex-col gap-4">
-            <button 
-              class="text-left text-xs uppercase tracking-[0.2em] text-white/60 flex items-center gap-2 hover:text-white/80 transition" 
-              type="button"
-              aria-expanded="false"
-              aria-controls="region-links"
-              data-region-toggle>
+            <button
+              class="text-left text-xs uppercase tracking-[0.2em] text-white/60 flex items-center gap-2 hover:text-white/80 transition"
+              type="button" aria-expanded="false" aria-controls="region-links" data-region-toggle>
               Regio's
-              <svg class="w-3 h-3 transition-transform duration-300" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
-                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/>
+              <svg class="w-3 h-3 transition-transform duration-300" fill="currentColor" viewBox="0 0 20 20"
+                aria-hidden="true">
+                <path fill-rule="evenodd"
+                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                  clip-rule="evenodd" />
               </svg>
             </button>
-            <div 
-              id="region-links"
-              class="hidden flex-col gap-3 text-sm text-white/50"
-              data-region-links>
-              <a class="transition hover:text-white/70" href="../tattoo-krommenie">Krommenie</a>
-              <a class="transition hover:text-white/70" href="../tattoo-castricum">Castricum</a>
-              <a class="transition hover:text-white/70" href="../tattoo-heemskerk">Heemskerk</a>
+            <div id="region-links" class="hidden flex-col gap-3 text-sm text-white/50" data-region-links>
+              <a class="transition hover:text-white/70" href="../tattoo-alkmaar">Alkmaar</a>
+              <a class="transition hover:text-white/70" href="../tattoo-amsterdam">Amsterdam</a>
               <a class="transition hover:text-white/70" href="../tattoo-beverwijk">Beverwijk</a>
-            </div>
-          </div>
-          <div class="flex flex-col gap-4">
-            <button 
-              class="text-left text-xs uppercase tracking-[0.2em] text-white/60 flex items-center gap-2 hover:text-white/80 transition" 
-              type="button"
-              aria-expanded="false"
-              aria-controls="region-links"
-              data-region-toggle>
-              Regio's
-              <svg class="w-3 h-3 transition-transform duration-300" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
-                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/>
-              </svg>
-            </button>
-            <div 
-              id="region-links"
-              class="hidden flex-col gap-3 text-sm text-white/50"
-              data-region-links>
+              <a class="transition hover:text-white/70" href="../tattoo-castricum">Castricum</a>
+              <a class="transition hover:text-white/70" href="../tattoo-haarlem">Haarlem</a>
+              <a class="transition hover:text-white/70" href="../tattoo-heemskerk">Heemskerk</a>
+              <a class="transition hover:text-white/70" href="../tattoo-koog-aan-de-zaan">Koog aan de Zaan</a>
+              <a class="transition hover:text-white/70" href="../tattoo-krommenie">Krommenie</a>
+              <a class="transition hover:text-white/70" href="../tattoo-uitgeest">Uitgeest</a>
+              <a class="transition hover:text-white/70" href="../tattoo-westzaan">Westzaan</a>
+              <a class="transition hover:text-white/70" href="../tattoo-wormerveer">Wormerveer</a>
               <a class="transition hover:text-white/70" href="../tattoo-zaandam">Zaandam</a>
               <a class="transition hover:text-white/70" href="../tattoo-zaandijk">Zaandijk</a>
-              <a class="transition hover:text-white/70" href="../tattoo-koog-aan-de-zaan">Koog aan de Zaan</a>
-              <a class="transition hover:text-white/70" href="../tattoo-wormerveer">Wormerveer</a>
-              <a class="transition hover:text-white/70" href="../tattoo-uitgeest">Uitgeest</a>
             </div>
           </div>
         </div>
@@ -1556,7 +1542,7 @@
   <script src="../js/scroll-reveal.js"></script>
   <script src="../js/care-steps-carousel.js"></script>
   <script src="../js/google-reviews.js" data-base-path="../" defer></script>
-  <script src="../js/region-toggle.js"></script><script src="../js/region-toggle.js"></script>
+  <script src="../js/region-toggle.js"></script>
   
   <!-- Structured Data voor Local Business SEO -->
   <script type="application/ld+json">
