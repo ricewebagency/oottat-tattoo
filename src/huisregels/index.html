@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Oottat Tattoo | Huisregels</title>
   <meta name="description"
-    content="Lees de huisregels van Oottat Tattoo voor afspraken, hygiëne, voorbereiding en gedrag in de studio." />
+    content="Bekijk de huisregels van Oottat Tattoo in Assendelft en ontdek wat je kunt verwachten tijdens je afspraak." />
   <meta name="theme-color" content="#000000" />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://oottattattoo.nl/huisregels" />
@@ -17,19 +17,20 @@
   <meta property="og:site_name" content="Oottat Tattoo" />
   <meta property="og:title" content="Oottat Tattoo | Huisregels" />
   <meta property="og:description"
-    content="Lees de huisregels van Oottat Tattoo voor afspraken, hygiëne, voorbereiding en gedrag in de studio." />
+    content="Bekijk de huisregels van Oottat Tattoo in Assendelft en ontdek wat je kunt verwachten tijdens je afspraak." />
   <meta property="og:url" content="https://oottattattoo.nl/huisregels" />
-  <meta property="og:image" content="https://oottattattoo.nl/assets/images/impression-1.jpg" />
+  <meta property="og:image" content="https://oottattattoo.nl/assets/images/impression-3.jpg" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Oottat Tattoo | Huisregels" />
   <meta name="twitter:description"
-    content="Lees de huisregels van Oottat Tattoo voor afspraken, hygiëne, voorbereiding en gedrag in de studio." />
-  <meta name="twitter:image" content="https://oottattattoo.nl/assets/images/impression-1.jpg" />
+    content="Bekijk de huisregels van Oottat Tattoo in Assendelft en ontdek wat je kunt verwachten tijdens je afspraak." />
+  <meta name="twitter:image" content="https://oottattattoo.nl/assets/images/impression-3.jpg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" />
   <link rel="stylesheet" href="../css/main.css" />
   <link rel="stylesheet" href="../js/buttons.css" />
+  <link rel="stylesheet" href="../js/shimmer.css" />
   <!-- Google Tag Manager -->
   <script>(function (w, d, s, l, i) {
       w[l] = w[l] || []; w[l].push({
@@ -48,8 +49,37 @@
       style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
 
+  <div class="fixed inset-0 z-[60] flex items-center justify-center bg-black opacity-0 pointer-events-none"
+    data-intro-overlay>
+    <div class="w-full max-w-xl px-6" data-intro-logo>
+      <div class="mt-10 space-y-5 opacity-0 translate-y-3 transition-all duration-500" data-intro-timeline>
+        <div class="relative h-12 overflow-hidden text-center">
+          <p class="absolute inset-x-0 top-0 text-sm uppercase tracking-[0.18em] text-white/85 opacity-0 translate-y-4 transition-all duration-500"
+            data-intro-step>
+            Eerst jouw idee
+          </p>
+          <p class="absolute inset-x-0 top-0 text-sm uppercase tracking-[0.18em] text-white/85 opacity-0 translate-y-4 transition-all duration-500"
+            data-intro-step>
+            Dan ontwerpen we het design
+          </p>
+          <p class="absolute inset-x-0 top-0 text-sm uppercase tracking-[0.18em] text-white/85 opacity-0 translate-y-4 transition-all duration-500"
+            data-intro-step>
+            Daarna krijg jij een kunstwerk
+          </p>
+        </div>
+
+        <div class="space-y-2">
+          <div class="h-[2px] w-full overflow-hidden rounded-full bg-white/20">
+            <div class="h-full w-full origin-left scale-x-0 rounded-full bg-white transition-transform duration-150"
+              data-intro-progress></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <header
-    class="fixed inset-x-0 top-0 z-50 h-20 border-b border-transparent bg-black/90 backdrop-blur transition-[background-color,backdrop-filter,box-shadow,border-color] duration-300"
+    class="fixed inset-x-0 top-0 z-50 h-20 border-b border-transparent bg-transparent backdrop-blur-0 transition-[background-color,backdrop-filter,box-shadow,border-color] duration-300 animate-fadeInDown"
     data-site-header>
     <div class="mx-auto flex h-full items-center justify-between px-6 lg:px-12 xl:px-16">
       <button
@@ -76,10 +106,14 @@
           <span class="text-3xl tracking-[0.2em]">TATTOO</span>
           <span class="text-xs uppercase tracking-[0.45em] text-white lg:inline">Oottat</span>
         </span>
+        <span aria-hidden="true"
+          class="pointer-events-none absolute inset-y-0 left-0 w-5 bg-gradient-to-r from-black to-transparent opacity-0 animate-logoEdgeLeft"></span>
+        <span aria-hidden="true"
+          class="pointer-events-none absolute inset-y-0 right-0 w-5 bg-gradient-to-l from-black to-transparent opacity-0 animate-logoEdgeRight"></span>
       </a>
 
-      <nav class="hidden items-center gap-7 text-xs tracking-[0.16em] text-white/80 lg:flex">
-        <a class="transition hover:text-primary uppercase" href="../">Home</a>
+      <nav class="hidden items-center gap-7 text-xs uppercase tracking-[0.16em] text-white/80 lg:flex">
+        <a class="transition hover:text-primary" href="../">Home</a>
         <a class="transition hover:text-primary uppercase" href="../galerij">Galerij</a>
         <div class="group relative">
           <button type="button"
@@ -124,7 +158,7 @@
           </div>
         </div>
         <a href="https://wa.me/31610979663?text=Hoi%20Guido%2C%20ik%20zou%20graag%20een%20afspraak%20bij%20je%20willen%20maken."
-          class="button-primary !py-3 !px-4 uppercase !text-[11px]">
+          class="button-primary !py-3 !px-4 !text-[11px]">
           Afspraak maken
         </a>
       </nav>
@@ -138,6 +172,7 @@
   </header>
 
   <main class="overflow-x-hidden pt-20">
+
     <section class="bg-black text-primary">
       <div class="mx-auto w-full max-w-4xl px-6 py-12 md:py-16">
         <div class="mb-10 flex flex-col gap-4">
@@ -222,77 +257,6 @@
         </div>
       </div>
     </section>
-  </main>
-
-  <div id="mobile-menu"
-    class="fixed inset-0 z-40 flex items-start justify-center bg-black pt-20 opacity-0 pointer-events-none backdrop-blur transition-all duration-500 w-[80vw] max-w-[300px]"
-    aria-hidden="true" data-mobile-menu>
-    <div class="w-full h-full rounded-[5px] p-4 transition-all duration-500 translate-y-4 opacity-0" data-mobile-panel>
-      <nav class="flex flex-col text-xl font-montserrat tracking-[0.05em] text-primary">
-        <a class="group menu-item flex items-center justify-between text-xs uppercase py-4 border-b-[1px] border-white/20 font-bold opacity-0 -translate-y-2 transition-all duration-500 delay-[80ms]"
-          href="../">
-          <span class="group-hover:text-white/60 duration-300">Home</span>
-          <img src="../assets/icons/chevron-right.svg" alt=""
-            class="text-white w-4 h-4 ml-2 transition-transform duration-300 group-hover:translate-x-1" />
-        </a>
-        <a class="group menu-item flex items-center justify-between text-xs uppercase py-4 border-b-[1px] border-white/20 font-bold opacity-0 -translate-y-2 transition-all duration-500 delay-[0ms]"
-          href="https://wa.me/31610979663?text=Hoi%20Guido%2C%20ik%20zou%20graag%20een%20afspraak%20bij%20je%20willen%20maken.">
-          <span class="group-hover:text-white/60 duration-300">Afspraak maken</span>
-          <img src="../assets/icons/chevron-right.svg" alt=""
-            class="text-white w-4 h-4 ml-2 transition-transform duration-300 group-hover:translate-x-1" />
-        </a>
-        <a class="group menu-item flex items-center justify-between text-xs uppercase py-4 border-b-[1px] border-white/20 font-bold opacity-0 -translate-y-2 transition-all duration-500 delay-[80ms]"
-          href="../galerij">
-          <span class="group-hover:text-white/60 duration-300">Galerij</span>
-          <img src="../assets/icons/chevron-right.svg" alt=""
-            class="text-white w-4 h-4 ml-2 transition-transform duration-300 group-hover:translate-x-1" />
-        </a>
-        <details class="group border-b-[1px] border-white/20 py-1" open>
-          <summary
-            class="menu-item flex cursor-pointer list-none items-center justify-between py-3 text-xs font-bold uppercase opacity-0 -translate-y-2 transition-all duration-500 delay-[200ms]">
-            <a class="group-hover:text-white/60 duration-300" href="../tattoo-stijlen/">Tattoo stijlen</a>
-            <img src="../assets/icons/chevron-right.svg" alt=""
-              class="text-white w-4 h-4 ml-2 transition-transform duration-300 group-open:rotate-90" />
-          </summary>
-          <div class="flex flex-col gap-2 pb-3 pl-4">
-            <a class="menu-item text-[11px] uppercase tracking-[0.08em] text-white/70 transition hover:text-white opacity-0 -translate-y-2 transition-all duration-500 delay-[220ms]"
-              href="../tattoo-stijlen/black-and-grey">Black & Grey</a>
-            <a class="menu-item text-[11px] uppercase tracking-[0.08em] text-white/70 transition hover:text-white opacity-0 -translate-y-2 transition-all duration-500 delay-[240ms]"
-              href="../tattoo-stijlen/realism">Realism</a>
-            <a class="menu-item text-[11px] uppercase tracking-[0.08em] text-white/70 transition hover:text-white opacity-0 -translate-y-2 transition-all duration-500 delay-[240ms]"
-              href="../tattoo-stijlen/dotwork">Dotwork</a>
-            <a class="menu-item text-[11px] uppercase tracking-[0.08em] text-white/70 transition hover:text-white opacity-0 -translate-y-2 transition-all duration-500 delay-[240ms]"
-              href="../tattoo-stijlen/#lettering">Lettering</a>
-          </div>
-        </details>
-        <details class="group border-b-[1px] border-white/20 py-1">
-          <summary
-            class="menu-item flex cursor-pointer list-none items-center justify-between py-3 text-xs font-bold uppercase opacity-0 -translate-y-2 transition-all duration-500 delay-[80ms]">
-            <span class="group-hover:text-white/60 duration-300">Over ons</span>
-            <img src="../assets/icons/chevron-right.svg" alt=""
-              class="text-white w-4 h-4 ml-2 transition-transform duration-300 group-open:rotate-90" />
-          </summary>
-          <div class="flex flex-col gap-2 pb-3 pl-4">
-            <a class="menu-item text-[11px] uppercase tracking-[0.08em] text-white/70 transition hover:text-white opacity-0 -translate-y-2 transition-all duration-500 delay-[120ms]"
-              href="../#over-ons">Over ons</a>
-            <a class="menu-item text-[11px] uppercase tracking-[0.08em] text-white/70 transition hover:text-white opacity-0 -translate-y-2 transition-all duration-500 delay-[140ms]"
-              href="../huisregels">Huisregels</a>
-          </div>
-        </details>
-        <a class="group menu-item flex items-center justify-between text-xs uppercase py-4 font-bold opacity-0 -translate-y-2 transition-all duration-500 delay-[240ms]"
-          href="tel:+31610979663">
-          <span class="group-hover:text-white/60 duration-300">Bel ons</span>
-          <img src="../assets/icons/chevron-right.svg" alt=""
-            class="text-white w-4 h-4 ml-2 transition-transform duration-300 group-hover:translate-x-1" />
-        </a>
-        <a href="https://wa.me/31610979663?text=Hoi%20Guido%2C%20ik%20zou%20graag%20een%20afspraak%20bij%20je%20willen%20boeken."
-          class="group mt-4 flex gap-2 button-primary">
-          Boek nu
-          <span class="group-hover:translate-x-1 duration-300">→</span>
-        </a>
-      </nav>
-    </div>
-  </div>
 
     <footer class="relative bg-black text-primary border-t border-white/10">
       <div aria-hidden="true"
@@ -438,6 +402,111 @@
           d="M68.772 55.603c-1.378-3.061-2.828-3.123-4.137-3.176l-3.524-.043c-1.226 0-3.218.46-4.902 2.3s-6.435 6.287-6.435 15.332 6.588 17.785 7.506 19.013 12.718 20.381 31.405 27.75c15.529 6.124 18.689 4.906 22.061 4.6s10.877-4.447 12.408-8.74 1.532-7.971 1.073-8.74-1.685-1.226-3.525-2.146-10.877-5.367-12.562-5.981-2.91-.919-4.137.921-4.746 5.979-5.819 7.206-2.144 1.381-3.984.462-7.76-2.861-14.784-9.124c-5.465-4.873-9.154-10.891-10.228-12.73s-.114-2.835.808-3.751c.825-.824 1.838-2.147 2.759-3.22s1.224-1.84 1.836-3.065.307-2.301-.153-3.22-4.032-10.011-5.666-13.647" />
       </svg>
     </a>
+
+  </main>
+
+  <div
+    class="fixed inset-0 z-[80] flex items-center justify-center bg-black/90 p-4 opacity-0 invisible pointer-events-none transition-opacity duration-300 sm:p-8"
+    data-lightbox-modal role="dialog" aria-modal="true" aria-label="Afbeelding vergroten">
+    <button type="button"
+      class="absolute right-4 top-4 inline-flex h-10 w-10 items-center justify-center rounded-full bg-black/50 text-3xl leading-none text-white transition hover:text-white/70"
+      data-lightbox-close aria-label="Sluit lightbox">
+      <span aria-hidden="true">&times;</span>
+    </button>
+    <figure class="w-full max-w-6xl translate-y-3 scale-95 transition duration-300" data-lightbox-panel>
+      <div class="relative flex w-full items-center justify-center">
+        <button type="button"
+          class="absolute left-2 top-1/2 z-10 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full border border-white/25 bg-black/60 text-white transition hover:bg-white hover:text-black sm:left-4 sm:h-11 sm:w-11"
+          data-lightbox-prev aria-label="Vorige afbeelding">
+          <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+        </button>
+        <img src="" alt=""
+          class="max-h-[78vh] w-auto max-w-full select-none rounded-md object-contain shadow-[0_16px_48px_rgba(0,0,0,0.45)] touch-pan-y sm:max-h-[82vh]"
+          data-lightbox-image />
+        <button type="button"
+          class="absolute right-2 top-1/2 z-10 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full border border-white/25 bg-black/60 text-white transition hover:bg-black/30 sm:right-4 sm:h-11 sm:w-11"
+          data-lightbox-next aria-label="Volgende afbeelding">
+          <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+        </button>
+      </div>
+    </figure>
+  </div>
+
+  <div id="mobile-menu"
+    class="fixed inset-0 z-40 flex items-start justify-center bg-black pt-20 opacity-0 pointer-events-none backdrop-blur transition-all duration-500 w-[80vw] max-w-[300px]"
+    aria-hidden="true" data-mobile-menu>
+    <div class="w-full h-full rounded-[5px] p-4 transition-all duration-500 translate-y-4 opacity-0" data-mobile-panel>
+      <nav class="flex flex-col text-xl font-montserrat tracking-[0.05em] text-primary">
+        <a class="group menu-item flex items-center justify-between text-xs uppercase py-4 border-b-[1px] border-white/20 font-bold opacity-0 -translate-y-2 transition-all duration-500 delay-[80ms]"
+          href="../">
+          <span class="group-hover:text-white/60 duration-300">Home</span>
+          <img src="../assets/icons/chevron-right.svg" alt=""
+            class="text-white w-4 h-4 ml-2 transition-transform duration-300 group-hover:translate-x-1" />
+        </a>
+        <a class="group menu-item flex items-center justify-between text-xs uppercase py-4 border-b-[1px] border-white/20 font-bold opacity-0 -translate-y-2 transition-all duration-500 delay-[0ms]"
+          href="https://wa.me/31610979663?text=Hoi%20Guido%2C%20ik%20zou%20graag%20een%20afspraak%20bij%20je%20willen%20maken.">
+          <span class="group-hover:text-white/60 duration-300">Afspraak maken</span>
+          <img src="../assets/icons/chevron-right.svg" alt=""
+            class="text-white w-4 h-4 ml-2 transition-transform duration-300 group-hover:translate-x-1" />
+        </a>
+        <a class="group menu-item flex items-center justify-between text-xs uppercase py-4 border-b-[1px] border-white/20 font-bold opacity-0 -translate-y-2 transition-all duration-500 delay-[80ms]"
+          href="../galerij">
+          <span class="group-hover:text-white/60 duration-300">Galerij</span>
+          <img src="../assets/icons/chevron-right.svg" alt=""
+            class="text-white w-4 h-4 ml-2 transition-transform duration-300 group-hover:translate-x-1" />
+        </a>
+        <details class="group border-b-[1px] border-white/20 py-1" open>
+          <summary
+            class="menu-item flex cursor-pointer list-none items-center justify-between py-3 text-xs font-bold uppercase opacity-0 -translate-y-2 transition-all duration-500 delay-[200ms]">
+            <a class="group-hover:text-white/60 duration-300" href="../tattoo-stijlen/">Tattoo stijlen</a>
+            <img src="../assets/icons/chevron-right.svg" alt=""
+              class="text-white w-4 h-4 ml-2 transition-transform duration-300 group-open:rotate-90" />
+          </summary>
+          <div class="flex flex-col gap-2 pb-3 pl-4">
+            <a class="menu-item text-[11px] uppercase tracking-[0.08em] text-white/70 transition hover:text-white opacity-0 -translate-y-2 transition-all duration-500 delay-[220ms]"
+              href="../tattoo-stijlen/black-and-grey">Black & Grey</a>
+            <a class="menu-item text-[11px] uppercase tracking-[0.08em] text-white/70 transition hover:text-white opacity-0 -translate-y-2 transition-all duration-500 delay-[240ms]"
+              href="../tattoo-stijlen/realism">Realism</a>
+            <a class="menu-item text-[11px] uppercase tracking-[0.08em] text-white/70 transition hover:text-white opacity-0 -translate-y-2 transition-all duration-500 delay-[240ms]"
+              href="../tattoo-stijlen/dotwork">Dotwork</a>
+            <a class="menu-item text-[11px] uppercase tracking-[0.08em] text-white/70 transition hover:text-white opacity-0 -translate-y-2 transition-all duration-500 delay-[240ms]"
+              href="../tattoo-stijlen/#lettering">Lettering</a>
+          </div>
+        </details>
+        <details class="group border-b-[1px] border-white/20 py-1">
+          <summary
+            class="menu-item flex cursor-pointer list-none items-center justify-between py-3 text-xs font-bold uppercase opacity-0 -translate-y-2 transition-all duration-500 delay-[80ms]">
+            <span class="group-hover:text-white/60 duration-300">Over ons</span>
+            <img src="../assets/icons/chevron-right.svg" alt=""
+              class="text-white w-4 h-4 ml-2 transition-transform duration-300 group-open:rotate-90" />
+          </summary>
+          <div class="flex flex-col gap-2 pb-3 pl-4">
+            <a class="menu-item text-[11px] uppercase tracking-[0.08em] text-white/70 transition hover:text-white opacity-0 -translate-y-2 transition-all duration-500 delay-[120ms]"
+              href="../#over-ons">Over ons</a>
+            <a class="menu-item text-[11px] uppercase tracking-[0.08em] text-white/70 transition hover:text-white opacity-0 -translate-y-2 transition-all duration-500 delay-[140ms]"
+              href="../huisregels">Huisregels</a>
+          </div>
+        </details>
+        <a class="group menu-item flex items-center justify-between text-xs uppercase py-4 font-bold opacity-0 -translate-y-2 transition-all duration-500 delay-[240ms]"
+          href="tel:+31610979663">
+          <span class="group-hover:text-white/60 duration-300">Bel ons</span>
+          <img src="../assets/icons/chevron-right.svg" alt=""
+            class="text-white w-4 h-4 ml-2 transition-transform duration-300 group-hover:translate-x-1" />
+        </a>
+        <a href="https://wa.me/31610979663?text=Hoi%20Guido%2C%20ik%20zou%20graag%20een%20afspraak%20bij%20je%20willen%20boeken."
+          class="group mt-4 flex gap-2 button-primary">
+          Boek nu
+          <span class="group-hover:translate-x-1 duration-300">→</span>
+        </a>
+      </nav>
+    </div>
+  </div>
 
   <script src="../js/intro-overlay.js"></script>
   <script src="../js/current-year.js"></script>
